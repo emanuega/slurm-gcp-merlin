@@ -216,7 +216,10 @@ def install_packages():
                 'wget',
                 'tmux',
                 'pdsh',
-                'openmpi'
+                'openmpi',
+                'libXext',
+                'libSM',
+                'libXrender'
                ]
 
     while subprocess.call(['yum', 'install', '-y'] + packages):
