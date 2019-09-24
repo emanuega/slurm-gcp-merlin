@@ -588,7 +588,7 @@ NodeName={1}-compute{0}
         conf += "NodeName={0}-compute{1} State=CLOUD".format(CLUSTER_NAME, cloud_range)
 
     conf += """
-PartitionName={} Nodes={}-compute[1-{}] Default=YES MaxTime=INFINITE State=UP LLN=yes
+PartitionName={} Nodes={}-compute[1-{}] Default=YES MaxTime=INFINITE State=UP LLN=no
 """.format(DEF_PART_NAME, CLUSTER_NAME, MAX_NODE_COUNT)
 
     etc_dir = CURR_SLURM_DIR + '/etc'
