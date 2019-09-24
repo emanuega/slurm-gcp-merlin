@@ -23,9 +23,9 @@ resources:
 - name: slurm-cluster
   type: slurm.jinja
   properties:
-    cluster_name            : merlin-cluster2
+    cluster_name            : merlin-cluster
     static_node_count       : 1
-    max_node_count          : 50
+    max_node_count          : 5
 
     zone                    : us-east4-b
     region                  : us-east4
